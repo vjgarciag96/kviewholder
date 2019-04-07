@@ -73,3 +73,4 @@ private val itemsAdapter = KAdapter(
         itemDiffCallback = RowDiffCallback()
     )
 ```
+You can check a full example on app module of the project
