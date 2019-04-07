@@ -4,6 +4,8 @@ import androidx.annotation.DrawableRes
 
 sealed class Row {
     abstract val id: String
+    abstract override fun equals(other: Any?): Boolean
+    abstract override fun hashCode(): Int
 
     data class Text(
         override val id: String,
@@ -15,7 +17,4 @@ sealed class Row {
         val title: String,
         @DrawableRes val image: Int
     ) : Row()
-
-    abstract override fun equals(other: Any?): Boolean
-    abstract override fun hashCode(): Int
 }
