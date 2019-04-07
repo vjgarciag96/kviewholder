@@ -21,7 +21,6 @@ class TextViewHolder(itemView: View) : KViewHolder<Row.Text>(itemView) {
 }
 
 // Text with image row
-
 fun textWithImageRow() = itemViewTypeBinding<Row, KViewHolder<Row>>(
     itemType = Row.TextWithImage::class,
     viewHolder = TextWithImageView::class,
