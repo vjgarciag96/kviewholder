@@ -1,9 +1,17 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
+ext {
+    PUBLISH_GROUP_ID = 'com.vjgarcia'
+    PUBLISH_ARTIFACT_ID = 'kviewholder'
+    PUBLISH_VERSION = '1.0.0'
+    NAME = "KViewHolder"
+    DESCRIPTION = "Remove boilerplate code on multi row RV adapters"
+    WEBSITE = "https://github.com/vjgarciag96/kviewholder"
+}
+
 android {
     compileSdkVersion 28
-
 
     defaultConfig {
         minSdkVersion 15
@@ -33,3 +41,5 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 }
+
+apply from: "https://gist.githubusercontent.com/vjgarciag96/f5eaf6e8522dfdeed72407ddb01d00b8/raw/04e7126d8c4175ea1849446efaafbe8567664027/publish.gradle"
