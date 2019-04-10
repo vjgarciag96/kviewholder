@@ -5,7 +5,7 @@ Creating a recycler view adapter with multiple row types requires a lot of boile
 Add the next dependency on the build gradle of the android module where you want to use the library
 
 ```
-compile 'com.vjgarcia:kviewholder:1.0.0'
+implementation 'com.vjgarcia:kviewholder:1.0.0'
 ```
 
 ## How to create a multiple rows recycler view adapter with this library?
